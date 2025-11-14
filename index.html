@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gladness Edson | Shoes & Sandals Design</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-primary': '#1f2937', // Deep Navy
+                        'brand-accent': '#d97706', // Warm Amber (Tailwind amber-600)
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for smooth transitions and focus states */
+        .btn-accent {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+        }
+        .btn-accent:hover {
+            background-color: #b45309; /* Darker amber */
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .product-card {
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-brand-primary">
+
+    <!-- Navigation Header -->
+    <header="bg-white shadow-md sticky top-0 z-10">
+        <div="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-brand-primary tracking-tight">
+                Gladness <span class="text-brand-accent">Edson</span>
+            </a>
+            <!-- Simple Navigation Links -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#designs" class="text-brand-primary hover:text-brand-accent transition duration-150 ease-in-out font-medium">Designs</a>
+                <a href="#about" class="text-brand-primary hover:text-brand-accent transition duration-150 ease-in-out font-medium">About</a>
+                <a href="#contact" class="text-brand-primary hover:text-brand-accent transition duration-150 ease-in-out font-medium">Contact</a>
+            </nav>
+            <a href="#contact" class="md:hidden bg-brand-accent text-white px-3 py-1 rounded-full text-sm font-semibold hover:bg-amber-700 transition">Inquire</a>
+               <img="glad.jpg" 
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-brand-primary text-white py-16 sm:py-24 text-center">
+            <div class="max-w-4xl mx-auto px-4">
+                <h1 class="text-4xl sm:text-6xl font-black mb-4">
+                    Step Into <span class="text-brand-accent">Design.</span>
+                </h1>
+                <p class="text-xl sm:text-2xl font-light mb-8 text-gray-200">
+                    Handcrafted Shoes and Sandals by **Gladness Edson** — Where comfort meets elevated style.
+                </p>
+                <a href="#designs" class="inline-block bg-brand-accent text-white px-8 py-3 rounded-xl text-lg font-semibold btn-accent">
+                    View Latest Collection
+                </a>
+            </div>
+        </section>
+
+        <!-- Product Display / Designs Section -->
+        <section id="designs" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-brand-primary border-b-2 border-brand-accent inline-block pb-2">Our Signature Designs</h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Product Card 1: The 'Aurora' Sandal -->
+                    <div class="product-card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <img src="Screenshot_20250728-163339~2.png" alt="The Aurora Sandal" class="rounded-lg mb-4 w-full object-cover aspect-video">
+                        <h3 class="text-xl font-semibold mb-2 text-brand-primary">The Aurora Sandal</h3>
+                        <p class="text-gray-600 text-sm mb-4">Elegant leather sandal with custom gold hardware. Perfect for daytime luxury.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-brand-accent">$145</span>
+                            <button class="bg-brand-primary text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition duration-150">See Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2: The 'sneakers' Shoe -->
+                    <div class="product-card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <img=Screenshot_20250728-163339~2.png alt="The sneakers shoe class="
+                        <p class="text-gray-600 text-sm mb-4">A sleek, minimalist lace-up shoe in deep navy suede. Comfort-engineered sole.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-brand-accent">$199</span>
+                            <button class="bg-brand-primary text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition duration-150">See Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3: sandals -->
+                    <div class="product-card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <img src="Screenshot_20250910-144142.png" alt="sandals" class="rounded-lg mb-4 w-full object-cover aspect-video">
+                        <h3 class="text-xl font-semibold mb-2 text-brand-primary"> Sandals</h3>
+                        <p class="text-gray-600 text-sm mb-4">Earthy tones, sustainable materials, and an ergonomic.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-brand-accent">$120</span>
+                            <button class="bg-brand-primary text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition duration-150">See Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 sm:py-24 bg-gray-100">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-brand-primary border-b-2 border-brand-accent inline-block pb-2">The Designer: Gladness Edson</h2>
+                <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                    <!-- Placeholder for image, could be Gladness's photo -->
+                    <img src="https://placehold.co/150x150/d97706/ffffff?text=GE" alt="Gladness Edson Profile" class="rounded-full w-32 h-32 object-cover mb-6 md:mb-0 border-4 border-brand-accent">
+                    <p class="text-lg text-gray-700 text-left md:text-left">
+                        "Design is not just about aesthetics; it's about the feeling you get with every step." **Gladness Edson** is a passionate designer dedicated to creating footwear that seamlessly blends **artisan craftsmanship** with **modern biomechanics**. Every shoe and sandal is a testament to quality, conceived with the wearer's long-term comfort and style in mind. We believe that exceptional design should be accessible and lasting.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 text-brand-primary border-b-2 border-brand-accent inline-block pb-2">Get in Touch</h2>
+
+                <form id="contact-form" class="space-y-6 bg-gray-50 p-8 rounded-xl shadow-xl border border-gray-100">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <input type="text" id="name" name="name" required
+                               class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-brand-accent focus:border-brand-accent transition duration-150">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" required
+                               class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-brand-accent focus:border-brand-accent transition duration-150">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Inquiry (e.g., custom order, design question)</label>
+                        <textarea id="message" name="message" rows="4" required
+                                  class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-brand-accent focus:border-brand-accent transition duration-150"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit"
+                                class="w-full bg-brand-accent text-white py-3 rounded-xl text-lg font-semibold btn-accent">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Confirmation Message Box (Hidden by default) -->
+                <div id="success-message" class="hidden mt-6 p-4 rounded-lg bg-green-100 text-green-800 border border-green-300 text-center font-medium" role="alert">
+                    Thank you! Your message has been sent successfully. Gladness will be in touch soon.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-primary text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2024 Gladness Edson | Shoes & Sandals Design. All rights reserved.</p>
+            <p class="mt-2 text-gray-400">Designed with passion and crafted for comfort.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for form submission handling
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission
+
+            const form = event.target;
+            const successMessage = document.getElementById('success-message');
+
+            // 1. Simulate form processing (replace with actual backend logic if needed)
+            console.log('Form Submitted!');
+            console.log('Name:', form.name.value);
+            console.log('Email:', form.email.value);
+            console.log('Message:', form.message.value);
+
+            // 2. Show the success message
+            successMessage.classList.remove('hidden');
+
+            // 3. Clear the form fields
+            form.reset();
+
+            // 4. Hide the success message after 5 seconds
+            setTimeout(() => {
+                successMessage.classList.add('hidden');
+            }, 5000);
+
+            // Scroll up to show the confirmation clearly
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+    <script
